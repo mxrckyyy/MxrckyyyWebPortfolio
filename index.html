@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Marc Comeros | BSIT Student & Aspiring Web Developer</title>
+    <meta name="description"
+        content="Personal portfolio of John Marc Comeros, a second-year BSIT student focused on web development and building clean, user-friendly digital experiences.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johnmarccomeros.dev/">
+    <meta property="og:title" content="John Marc Comeros | BSIT Student & Aspiring Web Developer">
+    <meta property="og:description"
+        content="Personal portfolio of John Marc Comeros, a second-year BSIT student focused on web development.">
+    <meta property="og:image" content="assets/profile.jpg">
+
+    <!-- Lucide Icons (External Library for Crisp Icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page-transition-overlay" aria-hidden="true"></div>
+
+    <!-- Custom Cursor Glow Effect (Desktop Only) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>JM<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#journey" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-outline nav-cta">Let's Talk</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-grid"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        AVAILABLE FOR OPPORTUNITIES
+                    </div>
+
+                    <p class="hero-greeting">Hi, I'm John Marc.</p>
+                    <h1 class="hero-title">BSIT Student &amp; <span class="text-gradient">Aspiring Web Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        I build clean, responsive, and user-focused websites while continuously improving my skills in
+                        modern web development and software development.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects <i data-lucide="arrow-right"></i>
+                        </a>
+                        <!-- RESUME LINK: Ensure file exists at assets/John-Marc-Comeros-Resume.pdf -->
+                        <a href="assets/John-Marc-Comeros-Resume.pdf" class="btn btn-secondary" download>
+                            <i data-lucide="download"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-footer">
+                        <a href="#contact" class="link-arrow">Let's Connect <i data-lucide="arrow-up-right"></i></a>
+                        <div class="hero-socials">
+                            <!-- PLACEHOLDER SOCIAL LINKS: Replace href with actual links when available -->
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profile">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:johnmarc.comeros@example.com" aria-label="Send Email">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual: Minimalist Animated Code Terminal -->
+                <div class="hero-visual">
+                    <div class="terminal-card glass-panel">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="dot close"></span>
+                                <span class="dot minimize"></span>
+                                <span class="dot maximize"></span>
+                            </div>
+                            <div class="terminal-title">developer.cs — John Marc</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">using</span> System;
+
+<span class="code-keyword">namespace</span> Portfolio 
+{
+  <span class="code-keyword">public class</span> <span class="code-class">Developer</span> 
+  {
+    <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; } = <span class="code-string">"John Marc Comeros"</span>;
+    <span class="code-keyword">public string</span> Role { <span class="code-keyword">get</span>; } = <span class="code-string">"2nd Year BSIT Student"</span>;
+    <span class="code-keyword">public string</span>[] CoreTech { <span class="code-keyword">get</span>; } = {
+      <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"C#"</span>, <span class="code-string">"Python"</span>
+    };
+
+    <span class="code-keyword">public void</span> <span class="code-func">BuildNextLevelApp</span>() 
+    {
+      Console.WriteLine(<span class="code-string">"Status: Learning &amp; Coding daily..."</span>);
+    }
+  }
+}</code></pre>
+                            <div class="terminal-status">
+                                <span class="status-indicator"></span> System Online <span class="cursor-blink">_</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating Badge Overlay -->
+                    <div class="floating-badge glass-panel">
+                        <i data-lucide="code-2" class="icon-accent"></i>
+                        <div>
+                            <strong>Technical Focus</strong>
+                            <span>Web &amp; Application Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-label">01 / ABOUT ME</div>
+                <h2 class="section-title">Driven by Curiosity &amp; Code</h2>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="profile-image-wrap">
+                            <img src="assets/profile.jpg" alt="John Marc Comeros portrait" class="profile-photo">
+                        </div>
+                        <p class="lead-text">
+                            I am John Marc Comeros, a 19-year-old second-year Bachelor of Science in Information
+                            Technology (BSIT) student with a core focus on modern web development.
+                        </p>
+                        <p>
+                            My journey in technology revolves around building practical, responsive, and user-friendly
+                            software applications. I take pleasure in breaking down complex technical problems and
+                            transforming logic into clean, functional code.
+                        </p>
+                        <p>
+                            Rather than just writing code, I aim to continuously upgrade my core fundamentals in
+                            programming, software architecture, and modern UI practices through hands-on development.
+                        </p>
+                    </div>
+
+                    <div class="about-stats-container">
+                        <div class="stat-card glass-panel reveal-element">
+                            <span class="stat-number">19</span>
+                            <span class="stat-label">Years Old</span>
+                        </div>
+                        <div class="stat-card glass-panel reveal-element">
+                            <span class="stat-number">2nd Year</span>
+                            <span class="stat-label">BSIT Student</span>
+                        </div>
+                        <div class="stat-card glass-panel reveal-element">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Core Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section bg-secondary">
+            <div class="container">
+                <div class="section-label">02 / TECHNICAL SKILLS</div>
+                <h2 class="section-title">Technologies &amp; Toolkit</h2>
+                <p class="section-subtitle">Core languages, tools, and technical competencies I work with daily.</p>
+
+                <div class="skills-wrapper">
+                    <!-- Languages Category -->
+                    <div class="skills-group">
+                        <h3 class="skills-category-title"><i data-lucide="code"></i> Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="file-code"></i></div>
+                                <div class="skill-info">
+                                    <h4>HTML5</h4>
+                                    <p>Semantic structure &amp; accessible layouts</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="palette"></i></div>
+                                <div class="skill-info">
+                                    <h4>CSS3</h4>
+                                    <p>Responsive interfaces &amp; modern styling</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="terminal"></i></div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <p>Interactive web experiences &amp; DOM manipulation</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="cpu"></i></div>
+                                <div class="skill-info">
+                                    <h4>C#</h4>
+                                    <p>Object-oriented &amp; desktop application development</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="file-json"></i></div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <p>Programming logic, scripting &amp; problem solving</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Category -->
+                    <div class="skills-group">
+                        <h3 class="skills-category-title"><i data-lucide="wrench"></i> Tools &amp; Development
+                            Environment</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="laptop"></i></div>
+                                <div class="skill-info">
+                                    <h4>VS Code</h4>
+                                    <p>Primary editor for Web Development</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="monitor"></i></div>
+                                <div class="skill-info">
+                                    <h4>Visual Studio</h4>
+                                    <p>IDE for C# and .NET Windows applications</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="git-branch"></i></div>
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                    <p>Version control &amp; source code management</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card glass-panel reveal-element">
+                                <div class="skill-icon"><i data-lucide="github"></i></div>
+                                <div class="skill-info">
+                                    <h4>GitHub</h4>
+                                    <p>Project hosting &amp; repository collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-label">03 / PROJECTS</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of projects I've built while learning and developing my skills.
+                </p>
+
+                <!-- Project Filtering Buttons -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="application">Application</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 01 -->
+                    <article class="project-card glass-panel reveal-element" data-category="web">
+                        <div class="project-image-container">
+                            <!-- Replace src with assets/project-1.jpg -->
+                            <div class="project-placeholder-img">
+                                <i data-lucide="layout"></i>
+                                <span>Personal Portfolio Showcase</span>
+                            </div>
+                            <div class="project-badge">Web</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive personal portfolio website designed to showcase my skills, projects, and
+                                learning journey with a modern dark theme.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- PLACEHOLDER LINK: Replace # with actual GitHub URL -->
+                                <a href="#" class="btn-icon-text" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <!-- PLACEHOLDER LINK: Replace # with live link if available -->
+                                <a href="#" class="btn-icon-text" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 02 -->
+                    <article class="project-card glass-panel reveal-element" data-category="application">
+                        <div class="project-image-container">
+                            <!-- Replace src with assets/project-2.jpg -->
+                            <div class="project-placeholder-img">
+                                <i data-lucide="utensils"></i>
+                                <span>Desktop Order System</span>
+                            </div>
+                            <div class="project-badge">Application</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Comeros' Sizzling House</h3>
+                            <p class="project-description">
+                                A food ordering system project designed to manage food selections, orders, customer
+                                information, payment details, and receipts.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET</span>
+                                <span class="tag">Windows Forms</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- PLACEHOLDER LINK: Replace # with actual GitHub URL -->
+                                <a href="#" class="btn-icon-text" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 03 -->
+                    <article class="project-card glass-panel reveal-element" data-category="web">
+                        <div class="project-image-container">
+                            <!-- Replace src with assets/project-3.jpg -->
+                            <div class="project-placeholder-img">
+                                <i data-lucide="globe"></i>
+                                <span>Responsive Web UI</span>
+                            </div>
+                            <div class="project-badge">Web</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Web Development Practice Lab</h3>
+                            <p class="project-description">
+                                A responsive web interface created to practice modern CSS layouts, interactive
+                                JavaScript components, and mobile-first design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- PLACEHOLDER LINK: Replace # with actual GitHub URL -->
+                                <a href="#" class="btn-icon-text" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <!-- PLACEHOLDER LINK: Replace # with live demo if available -->
+                                <a href="#" class="btn-icon-text" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education / Journey Section -->
+        <section id="journey" class="section bg-secondary">
+            <div class="container">
+                <div class="section-label">04 / EDUCATION &amp; JOURNEY</div>
+                <h2 class="section-title">My Journey</h2>
+                <p class="section-subtitle">Academic timeline and technical progression.</p>
+
+                <div class="timeline">
+                    <!-- Timeline Event 1 -->
+                    <div class="timeline-item reveal-element">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">2026 — Present</span>
+                            <h3 class="timeline-title">BSIT — 2nd Year Student</h3>
+                            <p class="timeline-subtitle">Bachelor of Science in Information Technology</p>
+                            <p class="timeline-description">
+                                Actively expanding core software engineering concepts, web design paradigms,
+                                object-oriented programming, and working on hands-on practical course projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-label">05 / CONTACT</div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Let's Build Something.</h2>
+                        <p class="contact-text">
+                            I'm always interested in learning, building, and connecting with people who share an
+                            interest in technology. Feel free to reach out directly or drop a message!
+                        </p>
+
+                        <div class="contact-direct-links">
+                            <a href="mailto:johnmarc.comeros@example.com" class="contact-method glass-panel">
+                                <i data-lucide="mail" class="icon-accent"></i>
+                                <div>
+                                    <span class="label">Email Me</span>
+                                    <!-- PLACEHOLDER EMAIL: Replace with real email address -->
+                                    <span class="value">johnmarc.comeros@example.com</span>
+                                </div>
+                            </a>
+
+                            <div class="social-links-container">
+                                <!-- PLACEHOLDER LINK: Replace with actual GitHub profile -->
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn glass-panel" aria-label="GitHub">
+                                    <i data-lucide="github"></i> GitHub
+                                </a>
+                                <!-- PLACEHOLDER LINK: Replace with actual LinkedIn profile -->
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                    class="social-btn glass-panel" aria-label="LinkedIn">
+                                    <i data-lucide="linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="resume-cta-box">
+                            <p>Need a copy of my curriculum vitae?</p>
+                            <!-- RESUME DOWNLOAD LINK -->
+                            <a href="assets/John-Marc-Comeros-Resume.pdf" class="btn btn-primary" download>
+                                <i data-lucide="file-text"></i> Download Resume (PDF)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-panel">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                <span class="error-msg" id="nameError">Name is required.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Project Inquiry / Opportunity" required>
+                                <span class="error-msg" id="subjectError">Subject is required.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Hi John Marc, I'd like to discuss..." required></textarea>
+                                <span class="error-msg" id="messageError">Message is required.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span> <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#home" class="logo">John Marc Comeros</a>
+                <p class="footer-role">BSIT Student &amp; Aspiring Web Developer</p>
+            </div>
+
+            <div class="footer-socials">
+                <!-- PLACEHOLDER LINKS -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                        data-lucide="github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="mailto:johnmarc.comeros@example.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 John Marc Comeros. All rights reserved.</p>
+                <button id="backToTop" class="back-to-top" aria-label="Back to top">
+                    Back to top <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
