@@ -25,6 +25,7 @@ function initNavigation() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const sectionLinks = document.querySelectorAll('[data-section-link]');
     const sections = document.querySelectorAll('main section[id]');
 
     function showSection(sectionId) {
@@ -43,6 +44,20 @@ function initNavigation() {
         if (window.location.hash !== availableHash) {
             window.history.pushState(null, '', availableHash);
         }
+    }
+
+    function navigateToSection(targetId) {
+        if (!targetId) return;
+
+        showSection(targetId);
+
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        if (hamburger) hamburger.classList.remove('active');
+        if (navMenu) navMenu.classList.remove('active');
     }
 
     if (navbar) {
@@ -69,10 +84,15 @@ function initNavigation() {
             if (!href || !href.startsWith('#')) return;
 
             const targetId = href.substring(1);
-            showSection(targetId);
+            navigateToSection(targetId);
+        });
+    });
 
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+    sectionLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute('data-section-link');
+            navigateToSection(targetId);
         });
     });
 
